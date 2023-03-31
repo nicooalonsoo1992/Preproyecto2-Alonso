@@ -430,6 +430,7 @@ li a:hover {
     border: #000000 ridge 4px;
     background-color: goldenrod;
     transition: .5s linear;
+    color: #000000;
 }
 
 .form_button:hover {
