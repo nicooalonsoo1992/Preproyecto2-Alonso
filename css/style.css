@@ -370,7 +370,7 @@ li a:hover{
     margin-bottom: 15px;
     font-weight: 200;
     font-size: medium;
-    font-family: fantasy, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100px;
     height: 40px;
     border: #000000 ridge 4px;
