@@ -8,11 +8,11 @@
 }
 body {
     width: 100%;
-    height: 170vh;
+    /* height: 170vh;*/
 }
 main {
     width: 100%;
-    height: 80%;
+    /*height: 80%;*/
     background:-webkit-linear-gradient( rgba(0,0,0,1) 0%, rgb(78, 78, 78,1) 25%,
     rgba(0,0,0,1) 50%, rgba(78, 78, 78,1) 75%, rgba(0,0,0,1) 100% );
 }
@@ -109,8 +109,25 @@ li a:hover{
     margin-right: 25%;
     margin-top: 5%;
     line-height: 30px;
+    padding-bottom: 50px;
 }
 /***********************PROYECTOS************************/
+.contenedor_titulo--proyectos{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+.titulo_proyectos{
+    color: white;
+    text-shadow: 0 0 10px white,
+        0 0 20px white,
+        0 0 40px rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .padre_card{
     display: flex;
     justify-content: center;
@@ -123,13 +140,6 @@ li a:hover{
     border: 10px ridge rgb(255, 0, 0);
     margin-top: 20px;
     margin: 30px;
-}
-.card:hover{
-    animation-timing-function: infinite;
-    animation-name: rotacion;
-    animation-duration: 1s ;
-    animation-timing-function: linear;
-    transition: all 0.5s ease-in-out;
 }
 .card_img{
     width: 100%;
@@ -155,22 +165,14 @@ li a:hover{
     margin-left:5px ;
     margin-right:5px ;
 }
-@keyframes rotacion{
-    0%{
-        transform:rotate3d(0, 1, 0, 0deg )
-}
-    100%{
-        transform: rotate3d(0, 1, 0, 180deg);
-        transition: all 0.5s ease-in-out;
-    }
-}
+
 /***********************ESTUDIOS*************************/
 .body_estudios {
     width: 100%;
-    height: 220vh;
+   /* height: 220vh;*/
 }
 .main_estudios {
-    height: 81.35%;
+   /* height: 81.35%;*/
     width: 100%;
 }
 .contenedor_titulo_estudios {
@@ -273,6 +275,7 @@ li a:hover{
     display: flex;
     text-align: center;
     justify-content: space-around;
+    padding-bottom: 20px;
 }
 .idiomas_estudios {
     border: 5px dotted white;
@@ -330,12 +333,14 @@ li a:hover{
 /*******************CONTACTO*********************/
 .img_contacto{
     background: url(../imagenes/contact.jpg) no-repeat center top / cover;
+    height: 100%;
 }
 .contenedor_form{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 40px 0;
 }
 .form {
     display: flex;
@@ -367,7 +372,7 @@ li a:hover{
     margin-bottom: 15px;
     font-weight: 200;
     font-size: medium;
-    font-family: fantasy;
+    font-family: fantasy, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     width: 100px;
     height: 40px;
     border: #000000 ridge 4px;
@@ -382,7 +387,7 @@ li a:hover{
 }
 .img_footer_contacto{
     background: url(../imagenes/contact2.jpg) no-repeat center top /cover;
-    height: 14%;
+    
 }
 /********************FOOTER**********************/
 .footer_generico {
@@ -621,7 +626,12 @@ header{
             .contenedor_titulo_estudios{
                 margin-top: 70px;
             }
-        }
+            .img_contacto{
+                background: url(../imagenes/contact.jpg) no-repeat center top / cover;
+                width: 100%;
+            }
+        
         #check:checked ~ ul{
             right:-4%;
         }
+    }
