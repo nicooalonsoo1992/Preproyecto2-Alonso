@@ -736,6 +736,13 @@ footer div a {
 }
 
 @media screen and (max-width:487px) {
+    .titulo {
+        font-size: 20px;
+    }
+    
+    .parrafo {
+        font-size: 12px;
+    }
     .contenedor_titulo_estudios {
         margin-top: 70px;
     }
