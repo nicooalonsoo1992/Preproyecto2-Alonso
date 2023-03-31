@@ -119,8 +119,8 @@ li a:hover {
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(177, 127, 0);
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 5%;
     line-height: 30px;
     padding-bottom: 50px;
@@ -741,7 +741,7 @@ footer div a {
     }
     
     .parrafo {
-        font-size: 12px;
+        font-size: 14px;
     }
     .contenedor_titulo_estudios {
         margin-top: 70px;
