@@ -13,10 +13,16 @@ body {
 }
 
 main {
+    height: 100%;
     width: 100%;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 1) 0%, rgb(78, 78, 78, 1) 25%,
             rgba(0, 0, 0, 1) 50%, rgba(78, 78, 78, 1) 75%, rgba(0, 0, 0, 1) 100%);
-            height: 100%;
+}
+.main_inicio{
+height: 100vh;
+}
+.main_contacto{
+    height: 100vh;
 }
 
 /******WSP BTN todas las paginas*****/
@@ -399,6 +405,7 @@ li a:hover {
     font-size: 40px;
     font-weight: 200;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px 0 20px 0;
 }
 .caja_maestra{
     border: #0df053 solid 2px;
@@ -407,7 +414,7 @@ li a:hover {
     align-items: center;
     width: 100%;
     justify-content: center;
-    }
+}
 .laboral_uno{
     display: flex;
     flex-direction: column;
@@ -498,6 +505,7 @@ li a:hover {
 }
 
 /********************FOOTER**********************/
+
 .footer_generico {
     height: 14%;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 1) 0%, rgb(78, 78, 78, 1) 25%,
