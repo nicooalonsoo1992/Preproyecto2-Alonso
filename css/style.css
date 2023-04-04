@@ -19,8 +19,8 @@ main {
             rgba(0, 0, 0, 1) 50%, rgba(78, 78, 78, 1) 75%, rgba(0, 0, 0, 1) 100%);
 }
 
-
 /******WSP BTN todas las paginas*****/
+
 .btn-wsp {
     position: fixed;
     width: 55px;
@@ -96,6 +96,9 @@ li a:hover {
 }
 
 /*********************INICIO*********************/
+.main_inicio{
+    padding: 20px 0 30px 0;
+}
 .img_perfil {
     display: flex;
     justify-content: center;
@@ -105,9 +108,10 @@ li a:hover {
     margin-top: 20px;
     width: 200px;
     border-radius: 50%;
+    padding-bottom: 20px;
 }
 
-.titulo {
+.titulo_inicio {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
@@ -115,7 +119,7 @@ li a:hover {
     color: #f5931b;
 }
 
-.parrafo {
+.parrafo_inicio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +130,7 @@ li a:hover {
     color: rgb(177, 127, 0);
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 10px;
+    margin-top: 25px;
     line-height: 30px;
     padding-bottom: 50px;
 }
@@ -173,7 +177,7 @@ li a:hover {
 .card_body {
     display: flex;
     flex-direction: column;
-    background-color: green;
+    background-color: rgb(163, 163, 3);
     width: 100%;
     height: 49.5%;
 }
@@ -201,7 +205,7 @@ li a:hover {
     width: 100%;
 }
 
-.contenedor_titulo_estudios {
+.contenedor_titulo--estudios {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -211,7 +215,7 @@ li a:hover {
     align-content: end;
 }
 
-.hijo_titulo_estudios {
+.hijo_titulo--estudios {
     color: white;
     text-shadow: 0 0 10px white,
         0 0 20px white,
@@ -221,7 +225,7 @@ li a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.contenedor_padre_estudios {
+.contenedor_padre--estudios {
     width: 100%;
     height: 50%;
     display: grid;
@@ -235,7 +239,7 @@ li a:hover {
     height: 120px;
 }
 
-.contenedor_hijo_compartido {
+.contenedor_hijo--compartido {
     border: 10px ridge white;
     width: 200px;
     height: 300px;
@@ -313,7 +317,7 @@ li a:hover {
 }
 
 /****************ESTUDIOS/IDIOMAS****************/
-.contenedor_idiomas_estudios {
+.contenedor_idiomas--estudios {
     width: 100%;
     display: flex;
     text-align: center;
@@ -328,7 +332,7 @@ li a:hover {
     transition: 1s;
 }
 
-.idiomas_estudios_es:hover {
+.idiomas_estudios--es:hover {
     border-top: 10px ridge red;
     border-left: 10px ridge yellow;
     border-right: 10px ridge yellow;
@@ -337,7 +341,7 @@ li a:hover {
     transition: 1s;
 }
 
-.idiomas_estudios_de:hover {
+.idiomas_estudios--de:hover {
     border-top: 10px ridge rgb(0, 0, 0);
     border-left: 10px ridge rgb(255, 0, 0);
     border-right: 10px ridge rgb(255, 0, 0);
@@ -346,7 +350,7 @@ li a:hover {
     transition: 1s;
 }
 
-.idiomas_estudios_en:hover {
+.idiomas_estudios--en:hover {
     border-top: 10px ridge rgb(0, 7, 105);
     border-left: 10px ridge rgb(255, 255, 255);
     border-right: 10px ridge rgb(255, 255, 255);
@@ -355,7 +359,7 @@ li a:hover {
     transition: 1s;
 }
 
-.idiomas_estudios_it:hover {
+.idiomas_estudios--it:hover {
     border-top: 10px ridge rgb(31, 153, 0);
     border-left: 10px ridge rgb(255, 255, 255);
     border-right: 10px ridge rgb(255, 255, 255);
@@ -370,7 +374,7 @@ li a:hover {
     margin-top: 10px;
 }
 
-.texto_idiomas_estudios {
+.texto_idiomas--estudios {
     color: #4e4b4b;
     width: 100%;
     margin-top: 10px;
@@ -384,6 +388,7 @@ li a:hover {
 .laboral_contenedor--titulo{
     display: flex;
     place-content: center;
+    padding-bottom: 30px;
 }
 .laboral_titulo {
     color: white;
@@ -395,19 +400,46 @@ li a:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 20px 0 20px 0;
 }
-.caja_maestra{
-    border: #0df053 solid 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.laboral_contenedor--contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr;
     width: 100%;
-    justify-content: center;
+    height: 100%;
+    gap: 30px;
+    padding:0 15px 20px 15px;
+}
+.laboral{
+    padding: 30px 0 60px 0;
+    border: 6px outset violet;
+    place-self: center;
+    width: 100%;
+    height: 100%;
 }
 .laboral_uno{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 150px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.laboral_dos{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.laboral_tres{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.laboral_cuatro{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.laboral_cinco{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.laboral_seis{
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 .laboral_uno--titulo{
     color: white;
@@ -487,7 +519,7 @@ li a:hover {
     transition: .5s linear;
 }
 
-.img_footer_contacto {
+.img_footer--contacto {
     background: url(../imagenes/contact2.jpg) no-repeat center top /cover;
 
 }
@@ -547,20 +579,17 @@ footer div a {
     color: #6441a5;
 }
 
-/*********************MEDIA QUERIES*************************/
+/**************MEDIA QUERIES**************/
 @media screen and (max-width:952px) {
 
-    .main_inicio{
-        height: 100vh;
-        }
-        .main_contacto{
-            height: 100vh;
-        }
-    /******MENU DESPLEGABLE********/
+/******MENU DESPLEGABLE********/
+
     nav ul li a {
         font-size: 15px;
     }
+
 /******PROYECTOS******/
+
 .titulo_proyectos{
     padding-top: 50px;
 }
@@ -581,7 +610,7 @@ footer div a {
 .card_body {
     display: flex;
     flex-direction: column;
-    background-color: green;
+    background-color: rgb(134, 149, 1);
     width: 100%;
     height: 49.5%;
 }
@@ -599,7 +628,9 @@ footer div a {
     margin-right: 5px;
     font-size: 14px;
 }
-    /*********ESTUDIOS**********/
+
+/*********ESTUDIOS**********/
+
     .body_estudios {
         width: 100%;
         height: auto;
@@ -618,7 +649,7 @@ footer div a {
         height: auto;
     }
 
-    .contenedor_padre_estudios {
+    .contenedor_padre--estudios {
         width: 100%;
         height: auto;
         display: grid;
@@ -657,35 +688,70 @@ footer div a {
         grid-row: 3/4;
     }
 
-    .contenedor_idiomas_estudios {
+    .contenedor_idiomas--estudios {
         display: grid;
         grid-template-columns: 1fr .5fr .5fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 10px;
     }
 
-    .idiomas_estudios_es {
+    .idiomas_estudios--es {
         grid-column: 2/3;
         grid-row: 1/2;
     }
 
-    .idiomas_estudios_de {
+    .idiomas_estudios--de {
         grid-column: 3/4;
         grid-row: 1/2;
     }
 
-    .idiomas_estudios_en {
+    .idiomas_estudios--en {
         grid-column: 2/3;
         grid-row: 2/3;
     }
 
-    .idiomas_estudios_it {
+    .idiomas_estudios--it {
         grid-column: 3/4;
         grid-row: 2/3;
+    }
+
+/***********LABORAL************/
+
+    .laboral_contenedor--contenido{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+    }
+    .laboral_uno{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .laboral_dos{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .laboral_tres{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .laboral_cuatro{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .laboral_cinco{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .laboral_seis{
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 }
 
 /*******************MEDIA QUERIES 700Px*******************/
+
 @media screen and (max-width:700px) {
     .contenedor_form{
         padding-top: 100px;
@@ -695,7 +761,8 @@ footer div a {
         padding-bottom: 10px;
     }
 
-    /*******MENU DESPLEGABLE********/
+/*******MENU DESPLEGABLE********/
+
     nav {
         position: fixed;
         z-index: 200;
@@ -736,7 +803,9 @@ footer div a {
     #check:checked~ul {
         right: -1%;
     }
+
 /****PROYECTOS****/
+
 .padre_card{
     display: grid;
     grid-auto-columns: 1fr;
@@ -762,12 +831,14 @@ footer div a {
     grid-row: 2/3;
     place-self: center;
 }
+
     /*************ESTUDIOS/LENGUAJES DE PROGRAMACION**************/
-    .contenedor_titulo_estudios {
+
+    .contenedor_titulo--estudios {
         margin-top: 30px;
     }
 
-    .contenedor_padre_estudios {
+    .contenedor_padre--estudios {
         height: auto;
         grid-template-columns: 1fr 0.6fr 0.6fr 1fr;
         grid-template-rows: 0.03fr 0.03fr 0.03fr;
@@ -778,7 +849,7 @@ footer div a {
         height: 70px;
     }
 
-    .contenedor_hijo_compartido {
+    .contenedor_hijo--compartido {
         width: 150px;
         height: 120px;
     }
@@ -813,13 +884,14 @@ footer div a {
         grid-row: 3/4;
     }
 
-    /**************IDIOMAS*************/
+/**************IDIOMAS*************/
+
     .titulo_idiomas {
         align-items: center;
         margin: auto;
     }
 
-    .contenedor_idiomas_estudios {
+    .contenedor_idiomas--estudios {
         width: 100%;
         margin: auto;
     }
@@ -835,7 +907,7 @@ footer div a {
         margin-top: 5px;
     }
 
-    .texto_idiomas_estudios {
+    .texto_idiomas--estudios {
         margin-top: 5px;
         font-size: 14px;
     }
@@ -854,28 +926,77 @@ footer div a {
     .img_perfil {
         margin-top: 60px;
     }
+
+    /**********LABORAL**********/
+
+    .laboral_contenedor--contenido{
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+    }
+    .laboral_uno{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .laboral_dos{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .laboral_tres{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .laboral_cuatro{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .laboral_cinco{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .laboral_seis{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
 }
 
 @media screen and (max-width:487px) {
-    .titulo {
+    .titulo_inicio {
         font-size: 20px;
     }
-    
-    .parrafo {
+    .parrafo_inicio {
         font-size: 14px;
         margin-left: 5%;
     margin-right: 5%;
     }
-    .contenedor_titulo_estudios {
+    .contenedor_titulo--estudios {
         margin-top: 70px;
     }
+
+/*CONTACTO*/
 
     .img_contacto {
         background: url(../imagenes/contact.jpg) no-repeat center top / cover;
         width: 100%;
     }
 
+    /*MENU DESPLEGABLE*/
+
     #check:checked~ul {
         right: -4%;
+    }
+
+/****BTN WSP****/
+
+    .btn-wsp {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 20px;
+        font-size: 20px;
     }
 }
