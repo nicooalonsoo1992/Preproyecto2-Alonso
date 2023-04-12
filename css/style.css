@@ -4,20 +4,14 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-style: normal;
     
 }
 
 body {
     width: 100%;
+    background-color: #000000;
 }
 
-main {
-    height: 100%;
-    width: 100%;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 1) 0%, rgb(78, 78, 78, 1) 25%,
-            rgba(0, 0, 0, 1) 50%, rgba(78, 78, 78, 1) 75%, rgba(0, 0, 0, 1) 100%);
-}
 
 /******WSP BTN todas las paginas*****/
 
@@ -62,13 +56,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: goldenrod;
+    color: #EFEDDC;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
     font-weight: bolder;
-
 }
 
 li a.active,
@@ -78,7 +71,7 @@ li a:hover {
 }
 
 li a:hover {
-    color: #f5931b;
+    color: #EFEDDC;
 }
 
 .checkbtn {
@@ -97,9 +90,19 @@ li a:hover {
 
 /*********************INICIO*********************/
 .main_inicio{
-    padding: 20px 0 30px 0;
+    
+    display: grid;
+    place-content: center;
+    height: 100vh;
 }
-.img_perfil {
+.titulos_inicio{
+    display: grid;
+    place-items: center;
+}
+.parrafo_inicio{
+    padding: 0 20px 0 20px;
+}
+/*.img_perfil {
     display: flex;
     justify-content: center;
 }
@@ -133,8 +136,61 @@ li a:hover {
     margin-top: 25px;
     line-height: 30px;
     padding-bottom: 50px;
+}*/
+.caja
+{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background: linear-gradient(0deg,rgb(0, 0, 0), rgb(44, 44, 44));
+    display: grid;
+    place-items: center;
+    padding: 15px 20px 40px 20px;
+    color:#EFEDDC;
+    font-weight: bold;
+    font-size: 18px;
+}
+.glow::before , .glow::after
+{
+    content: '';
+    position:absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(270deg, rgb(0, 255, 85),rgb(0, 60, 255),rgb(255, 0, 242),rgb(98, 0, 255));
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animTest 10s linear infinite;
 }
 
+@keyframes animTest
+{
+    0%
+    {
+        background-position:  0 0;
+    }
+    50%
+    {
+        background-position: 400% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+
+}
+
+.glow::after
+{
+    filter: blur(15px);
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
 /***********************PROYECTOS************************/
 .contenedor_titulo--proyectos {
     display: flex;
@@ -544,7 +600,7 @@ li a:hover {
 
 footer div a {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: #EFEDDC;
 }
 
 .contactanos {
@@ -552,7 +608,7 @@ footer div a {
     font-weight: bold;
     font-style: oblique;
     font-family: cursive;
-    color: rgb(255, 0, 0);
+    color:#EFEDDC;
 }
 
 .facebook:hover {
