@@ -4,14 +4,12 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    
 }
 
 body {
     width: 100%;
-    background-color: #000000;
+    background-color: #19222b;
 }
-
 
 /******WSP BTN todas las paginas*****/
 
@@ -35,13 +33,37 @@ body {
     text-decoration: none;
     background: #fff;
     color: #0df053;
+    animation: btn 0.7s;
+}
+@keyframes btn{
+    0%{
+        transform: rotate(30deg);
+    }
+    10%{
+        transform: rotate(-15deg);
+        scale: 1.3;
+    }
+    20%{
+        transform: rotate(30deg);
+        scale: 1.4;
+    }
+    30%{
+        transform: rotate(-15deg);
+        scale: 1.3;
+    }
+    40%{
+        transform: rotate(30deg);
+    }
 }
 
 /***************Barra de navegación****************/
+header{
+    border-bottom: 2px solid white;
+}
 nav {
     height: 80px;
     width: 100%;
-    background-color: black;
+    background-color: #19222b;
 }
 
 nav ul {
@@ -56,7 +78,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #EFEDDC;
+    color:#BD9240;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -66,7 +88,7 @@ nav ul li a {
 
 li a.active,
 li a:hover {
-    background-color: rgb(114, 0, 0);
+    background-color:#a0263a;
     transition: 0.5s;
 }
 
@@ -76,7 +98,7 @@ li a:hover {
 
 .checkbtn {
     font-size: 30px;
-    color: #f5931b;
+    color: #BD9240;
     float: right;
     line-height: 80px;
     margin-right: 30px;
@@ -90,7 +112,6 @@ li a:hover {
 
 /*********************INICIO*********************/
 .main_inicio{
-    
     display: grid;
     place-content: center;
     height: 100vh;
@@ -102,69 +123,38 @@ li a:hover {
 .parrafo_inicio{
     padding: 0 20px 0 20px;
 }
-/*.img_perfil {
-    display: flex;
-    justify-content: center;
-}
 
-.img_perfil img {
-    margin-top: 20px;
-    width: 200px;
-    border-radius: 50%;
-    padding-bottom: 20px;
-}
-
-.titulo_inicio {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: #f5931b;
-}
-
-.parrafo_inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(177, 127, 0);
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 25px;
-    line-height: 30px;
-    padding-bottom: 50px;
-}*/
-.caja
+.caja_inicio
 {
     position: relative;
     width: 900px;
     height: 500px;
-    background: linear-gradient(0deg,rgb(0, 0, 0), rgb(44, 44, 44));
+    background: linear-gradient(0deg, rgb(44, 44, 44),#19222b);
     display: grid;
     place-items: center;
     padding: 15px 20px 40px 20px;
-    color:#EFEDDC;
+    /*color:#EFEDDC;*/
+    color: #BD9240;
+    /*color: #f7be5d;*/
     font-weight: bold;
     font-size: 18px;
 }
-.glow::before , .glow::after
+.brillo_inicio::before , .brillo_inicio::after
 {
     content: '';
     position:absolute;
     left: -2px;
     top: -2px;
-    background: linear-gradient(270deg, rgb(0, 255, 85),rgb(0, 60, 255),rgb(255, 0, 242),rgb(98, 0, 255));
+    /*background: linear-gradient(270deg, rgb(0, 255, 85),rgb(0, 60, 255),rgb(255, 0, 242),rgb(98, 0, 255));*/
+    background: linear-gradient(270deg,  #ffa600,#000000,#a0263a,#000000);
     background-size: 400%;
     width: calc(100% + 5px);
     height: calc(100% + 5px);
     z-index: -1;
-    animation: animTest 10s linear infinite;
+    animation: animInicio 10s linear infinite;
 }
 
-@keyframes animTest
+@keyframes animInicio
 {
     0%
     {
@@ -181,12 +171,12 @@ li a:hover {
 
 }
 
-.glow::after
+.brillo_inicio::after
 {
-    filter: blur(15px);
+    filter: blur(20px);
 }
 
-img{
+.img_inicio{
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -201,7 +191,7 @@ img{
 }
 
 .titulo_proyectos {
-    color: white;
+    color: #EFEDDC;
     text-shadow: 0 0 10px white,
         0 0 20px white,
         0 0 40px rgb(255, 255, 255);
@@ -220,7 +210,7 @@ img{
 .card {
     width: 260px;
     height: 290px;
-    border: 10px ridge rgb(255, 0, 0);
+    border: 10px ridge #BD9240;
     margin-top: 20px;
     margin: 30px;
 }
@@ -233,23 +223,25 @@ img{
 .card_body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(163, 163, 3);
+    background-color: #EFEDDC;
     width: 100%;
     height: 49.5%;
 }
 
 .card_title {
     text-align: start;
-    font-size: 20px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #000000;
 }
+
 
 .card_text {
     text-align: left;
     margin-left: 5px;
     margin-right: 5px;
     font-size: 15px;
+    font-weight: 600;
 }
 
 /***********************ESTUDIOS*************************/
@@ -263,16 +255,15 @@ img{
 
 .contenedor_titulo--estudios {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: end;
-    margin-bottom: 70px;
-    height: 100px;
-    align-content: end;
+    margin-bottom: 60px;
+    margin-top: 50px;
 }
 
 .hijo_titulo--estudios {
-    color: white;
+    color: #EFEDDC;
     text-shadow: 0 0 10px white,
         0 0 20px white,
         0 0 40px rgb(255, 255, 255);
@@ -304,71 +295,64 @@ img{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    transition: 1s;
+    cursor: pointer;
+}
+.contenedor_hijo--compartido:hover{
+    background-color: #ffffffde;
 }
 
 .html {
     grid-column: 2/3;
     grid-row: 1/2;
-    transition: 1s;
 }
 
 .html:hover {
-    background-color: #ffffffde;
     border: 10px ridge rgb(255, 4, 4);
 }
 
 .css {
     grid-column: 3/4;
     grid-row: 1/2;
-    transition: 1s;
 }
 
 .css:hover {
-    background-color: #ffffffde;
     border: 10px ridge rgb(19, 0, 194);
 }
 
 .bootstrap {
     grid-column: 4/5;
     grid-row: 1/2;
-    transition: 1s;
 }
 
 .bootstrap:hover {
-    background-color: #ffffffde;
     border: 10px ridge rgb(52, 0, 100);
 }
 
 .javascript {
     grid-column: 2/3;
     grid-row: 2/3;
-    transition: 1s;
 }
 
 .javascript:hover {
-    background-color: #ffffffde;
     border: 10px ridge rgb(212, 198, 0);
 }
 
 .react {
     grid-column: 3/4;
     grid-row: 2/3;
-    transition: 1s;
 }
 
 .react:hover {
-    background-color: #ffffffde;
     border: 10px ridge rgb(20, 121, 252);
 }
 
 .backend {
     grid-column: 4/5;
     grid-row: 2/3;
-    transition: 1s;
 }
 
 .backend:hover {
-    background-color: #ffffffde;
     border: 10px ridge rgb(39, 37, 37);
 }
 
@@ -386,6 +370,10 @@ img{
     width: 160px;
     height: 200px;
     transition: 1s;
+    cursor: pointer;
+}
+.idiomas_estudios:hover{
+    background-color: white;
 }
 
 .idiomas_estudios--es:hover {
@@ -393,8 +381,6 @@ img{
     border-left: 10px ridge yellow;
     border-right: 10px ridge yellow;
     border-bottom: 10px ridge red;
-    background-color: white;
-    transition: 1s;
 }
 
 .idiomas_estudios--de:hover {
@@ -402,8 +388,6 @@ img{
     border-left: 10px ridge rgb(255, 0, 0);
     border-right: 10px ridge rgb(255, 0, 0);
     border-bottom: 10px ridge rgb(255, 230, 0);
-    background-color: white;
-    transition: 1s;
 }
 
 .idiomas_estudios--en:hover {
@@ -411,8 +395,6 @@ img{
     border-left: 10px ridge rgb(255, 255, 255);
     border-right: 10px ridge rgb(255, 255, 255);
     border-bottom: 10px ridge rgb(255, 0, 0);
-    background-color: white;
-    transition: 1s;
 }
 
 .idiomas_estudios--it:hover {
@@ -420,8 +402,6 @@ img{
     border-left: 10px ridge rgb(255, 255, 255);
     border-right: 10px ridge rgb(255, 255, 255);
     border-bottom: 10px ridge rgb(255, 0, 0);
-    background-color: white;
-    transition: 1s;
 }
 
 .banderas_estudios {
@@ -434,11 +414,16 @@ img{
     color: #4e4b4b;
     width: 100%;
     margin-top: 10px;
-    text-shadow: 0 0 5px #4e4b4b,
-        0 0 10px #4e4b4b,
-        0 0 20px rgb(255, 255, 255);
+    text-shadow: 0 0 5px #727070,
+        0 0 10px #6d6a6a,
+        0 0 15px rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 200;
+}
+.contenedor_padre--estudios p{
+    font-family: 'Courier New', Courier, monospace, fantasy, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 /***************EXPERIENCIA LABORAL**************/
 .laboral_contenedor--titulo{
@@ -447,7 +432,7 @@ img{
     padding-bottom: 30px;
 }
 .laboral_titulo {
-    color: white;
+    color: #EFEDDC;
     text-shadow: 0 0 10px white,
         0 0 20px white,
         0 0 40px rgb(255, 255, 255);
@@ -467,11 +452,25 @@ img{
     padding:0 15px 20px 15px;
 }
 .laboral{
+    padding: 30px 0 20px 0;
+    border: 7px ridge rgb(255, 255, 255);
+    place-self: center;
+    width: 100%;
+    height: 250px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.laboral:hover{
     padding: 30px 0 60px 0;
-    border: 6px outset violet;
+    border: 9px ridge #BD9240;
     place-self: center;
     width: 100%;
     height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 1px 17px 8px rgba(255,255,255,1);
+    transform: scale(1.03);
+    background-color: #161414;
 }
 .laboral_uno{
     grid-column: 1/2;
@@ -498,24 +497,26 @@ img{
     grid-row: 2/3;
 }
 .laboral_uno--titulo{
-    color: white;
+    color: #EFEDDC;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     list-style: circle;
     margin-left: 25px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
-.laboral_uno--parrafo{
-    color: white;
+.laboral_parrafo{
+    color:  #EFEDDC;
     margin-left: 50px;
+    font-weight: bold;
 }
 .separacion{
     margin-top: 10px;
 }
 /*******************CONTACTO*********************/
-.img_contacto {
-    background: url(../imagenes/contact.jpg) no-repeat center top / cover;
-    height: 100%;
+
+.main_generico{
+    background-color: #19222b;
 }
 
 .contenedor_form {
@@ -531,11 +532,10 @@ img{
     flex-direction: column;
     text-align: center;
     margin: auto;
-    border: ridge goldenrod 8px;
+    border: ridge #BD9240 8px;
     padding: 20px;
     width: 340px;
-    background: -webkit-linear-gradient(rgba(0, 0, 0) 0%, rgb(23, 23, 23) 25%,
-            rgb(54, 54, 54, 0.98) 50%, rgb(83, 71, 82, 0.96) 75%, rgba(43, 38, 42, 0.9) 100%);
+            background: linear-gradient(0deg, rgb(44, 44, 44),#19222b,#19222b);
 }
 
 .form_datos {
@@ -562,30 +562,48 @@ img{
     font-family:Tahoma, Verdana, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100px;
     height: 40px;
-    border: #000000 ridge 4px;
-    background-color: goldenrod;
+    border: #EFEDDC ridge 5px;
+    background-color:#19222b;
     transition: .5s linear;
-    color: #000000;
+    color:#EFEDDC;
 }
 
 .form_button:hover {
-    border: 4px ridge goldenrod;
-    background-color: black;
-    color: goldenrod;
+    border: 5px ridge #BD9240;
+    background-color: #EFEDDC;
+    color: #222020;
     transition: .5s linear;
+    transform: scale(1.05);
+}
+.btn-gmail {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 100px;
+    right: 30px;
+    background: #fff;
+    color: #DB4A39;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 19px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.7);
+    z-index: 100;
 }
 
-.img_footer--contacto {
-    background: url(../imagenes/contact2.jpg) no-repeat center top /cover;
-
+.btn-gmail:hover {
+    text-decoration: none;
+    background:#DB4A39;
+    color: #fff;
+    animation: btn 0.7s;
 }
 
 /********************FOOTER**********************/
-
+footer{
+    border-top: 2px solid white;
+}
 .footer_generico {
-    height: 14%;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 1) 0%, rgb(78, 78, 78, 1) 25%,
-            rgba(0, 0, 0, 1) 50%, rgba(78, 78, 78, 1) 75%, rgba(0, 0, 0, 1) 100%);
+    background-color: #19222b;
 }
 
 .footer_padre {
@@ -600,7 +618,7 @@ img{
 
 footer div a {
     text-decoration: none;
-    color: #EFEDDC;
+    color: #a0263a;
 }
 
 .contactanos {
@@ -608,7 +626,7 @@ footer div a {
     font-weight: bold;
     font-style: oblique;
     font-family: cursive;
-    color:#EFEDDC;
+    color:#a0263a;
 }
 
 .facebook:hover {
@@ -643,7 +661,13 @@ footer div a {
     nav ul li a {
         font-size: 15px;
     }
-
+/***********INICIO***********/
+.caja_inicio
+{
+    width: 600px;
+    height: 600px;
+    font-size: 20px;
+}
 /******PROYECTOS******/
 
 .titulo_proyectos{
@@ -675,7 +699,7 @@ footer div a {
     text-align: start;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #EFEDDC;
 }
 
 .card_text {
@@ -809,13 +833,6 @@ footer div a {
 /*******************MEDIA QUERIES 700Px*******************/
 
 @media screen and (max-width:700px) {
-    .contenedor_form{
-        padding-top: 100px;
-    }
-    .laboral_contenedor--titulo{
-        padding-top: 80px;
-        padding-bottom: 10px;
-    }
 
 /*******MENU DESPLEGABLE********/
 
@@ -828,13 +845,13 @@ footer div a {
         display: block;
     }
 
-    ul {
+    nav ul {
         position: fixed;
         width: 100%;
         height: 100%;
         background-color: rgb(95, 95, 95);
         top: 80px;
-        right: -105%;
+        right: -107%;
         text-align: center;
         transition: all .5s;
         z-index: 200;
@@ -853,13 +870,22 @@ footer div a {
     li a:hover,
     li a.active {
         background: none;
-        color: goldenrod;
+        color: #EFEDDC;
     }
 
     #check:checked~ul {
         right: -1%;
     }
-
+/***********INICIO***********/
+.main_inicio{
+    padding-top: 60px;
+}
+.caja_inicio
+{
+    height: 550px;
+    width: 470px;
+    font-size: 18px;
+}
 /****PROYECTOS****/
 
 .padre_card{
@@ -888,10 +914,19 @@ footer div a {
     place-self: center;
 }
 
-    /*************ESTUDIOS/LENGUAJES DE PROGRAMACION**************/
+/*************ESTUDIOS/LENGUAJES DE PROGRAMACION**************/
 
+    .body_estudios {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_estudios {
+        height: auto;
+        width: 100%;
+    }
     .contenedor_titulo--estudios {
-        margin-top: 30px;
+        margin: 90px 0 30px 0;
     }
 
     .contenedor_padre--estudios {
@@ -945,6 +980,7 @@ footer div a {
     .titulo_idiomas {
         align-items: center;
         margin: auto;
+        margin: 20px 0 20px 0;
     }
 
     .contenedor_idiomas--estudios {
@@ -969,28 +1005,24 @@ footer div a {
     }
 
     /********************************/
-    .body_estudios {
-        width: 100%;
-        height: auto;
-    }
 
-    .main_estudios {
-        height: auto;
-        width: 100%;
-    }
 
     .img_perfil {
         margin-top: 60px;
     }
 
     /**********LABORAL**********/
-
+    
+    .laboral_contenedor--titulo{
+        padding-top: 70px;
+        padding-bottom: 10px;
+    }
     .laboral_contenedor--contenido{
         grid-template-columns:1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
         height: 100%;
-        gap: 30px;
+        gap: 20px;
     }
     .laboral_uno{
         grid-column: 1/2;
@@ -1017,32 +1049,47 @@ footer div a {
         grid-row: 6/7;
     }
 }
+/*******CONTACTO******/
+.contenedor_form{
+    padding-top: 100px;
+}
 
 @media screen and (max-width:487px) {
-    .titulo_inicio {
-        font-size: 20px;
-    }
-    .parrafo_inicio {
-        font-size: 14px;
-        margin-left: 5%;
-    margin-right: 5%;
-    }
-    .contenedor_titulo--estudios {
-        margin-top: 70px;
-    }
-
-/*CONTACTO*/
-
-    .img_contacto {
-        background: url(../imagenes/contact.jpg) no-repeat center top / cover;
-        width: 100%;
-    }
-
     /*MENU DESPLEGABLE*/
 
     #check:checked~ul {
-        right: -4%;
+        right: -4.7%;
     }
+/***********INICIO***********/
+.main_inicio{
+    height: 100vh;
+}
+.titulo_inicio {
+    font-size: 20px;
+}
+.parrafo_inicio {
+    font-size: 14px;
+    margin-left: 5%;
+margin-right: 5%;
+}
+.caja_inicio
+{
+    width: 330px;
+    padding: 15px 0 20px 0;
+}
+.caja_inicio h1{
+    font-size: 26px;
+}
+.caja_inicio h2{
+    font-size: 24px;
+}
+/*ESTUDIOS*/
+.contenedor_titulo--estudios {
+    margin-top: 85px;
+}
+.titulo_idiomas {
+    margin: 15px 0 10px 0;
+}
 
 /****BTN WSP****/
 
@@ -1055,4 +1102,14 @@ footer div a {
         border-radius: 20px;
         font-size: 20px;
     }
+    .btn-gmail {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        bottom: 75px;
+        right: 20px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
 }
+
