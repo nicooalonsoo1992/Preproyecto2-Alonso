@@ -21,17 +21,16 @@ body {
   bottom: 30px;
   right: 30px;
   background: #0df053;
-  color: #fff;
+  color: white;
   border-radius: 30px;
   text-align: center;
   font-size: 30px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
-
 .btn-wsp:hover {
   text-decoration: none;
-  background: #fff;
+  background: white;
   color: #0df053;
   animation: btn 0.7s;
 }
@@ -176,7 +175,7 @@ header a:hover {
 }
 .contenedor_titulo--proyectos h1 {
   color: #EFEDDC;
-  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px rgb(255, 255, 255);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
   font-size: 40px;
   font-weight: 200;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -239,7 +238,7 @@ header a:hover {
 }
 .contenedor_titulo--estudios h1, .contenedor_titulo--estudios h2 {
   color: #EFEDDC;
-  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px rgb(255, 255, 255);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
   font-size: 40px;
   font-weight: 200;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -275,16 +274,14 @@ header a:hover {
   transition: 1s;
   cursor: pointer;
 }
-
 .contenedor_hijo--compartido:hover {
-  background-color: rgba(255, 255, 255, 0.8705882353);
+  background-color: white;
 }
 
 .html {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-
 .html:hover {
   border: 10px ridge rgb(255, 7, 7);
 }
@@ -293,7 +290,6 @@ header a:hover {
   grid-column: 3/4;
   grid-row: 1/2;
 }
-
 .css:hover {
   border: 10px ridge rgb(19, 0, 194);
 }
@@ -302,7 +298,6 @@ header a:hover {
   grid-column: 4/5;
   grid-row: 1/2;
 }
-
 .bootstrap:hover {
   border: 10px ridge rgb(52, 0, 100);
 }
@@ -311,7 +306,6 @@ header a:hover {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
 .javascript:hover {
   border: 10px ridge rgb(212, 198, 0);
 }
@@ -320,7 +314,6 @@ header a:hover {
   grid-column: 3/4;
   grid-row: 2/3;
 }
-
 .react:hover {
   border: 10px ridge rgb(20, 121, 252);
 }
@@ -329,7 +322,6 @@ header a:hover {
   grid-column: 4/5;
   grid-row: 2/3;
 }
-
 .backend:hover {
   border: 10px ridge rgb(39, 37, 37);
 }
@@ -354,7 +346,7 @@ header a:hover {
   color: #4e4b4b;
   width: 100%;
   margin-top: 10px;
-  text-shadow: 0 0 5px #727070, 0 0 10px #6d6a6a, 0 0 15px rgb(255, 255, 255);
+  text-shadow: 0 0 5px #727070, 0 0 10px #6d6a6a, 0 0 15px white;
   font-size: 18px;
   font-weight: 200;
 }
@@ -363,7 +355,6 @@ header a:hover {
   height: 80px;
   margin-top: 10px;
 }
-
 .idiomas_estudios:hover {
   background-color: white;
 }
@@ -384,15 +375,15 @@ header a:hover {
 
 .idiomas_estudios--en:hover {
   border-top: 10px ridge rgb(0, 7, 105);
-  border-left: 10px ridge rgb(255, 255, 255);
-  border-right: 10px ridge rgb(255, 255, 255);
+  border-left: 10px ridge white;
+  border-right: 10px ridge white;
   border-bottom: 10px ridge rgb(255, 0, 0);
 }
 
 .idiomas_estudios--it:hover {
   border-top: 10px ridge rgb(31, 153, 0);
-  border-left: 10px ridge rgb(255, 255, 255);
-  border-right: 10px ridge rgb(255, 255, 255);
+  border-left: 10px ridge white;
+  border-right: 10px ridge white;
   border-bottom: 10px ridge rgb(255, 0, 0);
 }
 
@@ -405,7 +396,7 @@ header a:hover {
 
 .laboral_titulo {
   color: #EFEDDC;
-  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px rgb(255, 255, 255);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
   font-size: 40px;
   font-weight: 200;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -424,7 +415,7 @@ header a:hover {
 
 .laboral {
   padding: 30px 0 20px 0;
-  border: 7px ridge rgb(255, 255, 255);
+  border: 7px ridge white;
   place-self: center;
   width: 100%;
   height: 250px;
@@ -525,7 +516,7 @@ header a:hover {
   width: 260px;
   font-weight: 200;
   font-size: medium;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .form_textarea {
@@ -533,7 +524,7 @@ header a:hover {
   font-weight: 200;
   font-size: large;
   width: 260px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .form_button {
@@ -564,7 +555,7 @@ header a:hover {
   line-height: 55px;
   bottom: 100px;
   right: 30px;
-  background: #fff;
+  background: white;
   color: #DB4A39;
   border-radius: 30px;
   text-align: center;
@@ -576,7 +567,7 @@ header a:hover {
 .btn-gmail:hover {
   text-decoration: none;
   background: #DB4A39;
-  color: #fff;
+  color: white;
   animation: btn 0.7s;
 }
 
@@ -657,7 +648,7 @@ footer div a {
   }
   .card {
     width: 260px;
-    height: 170px;
+    height: 190px;
     border: 10px ridge #BD9240;
     margin-top: 20px;
     margin: 30px;

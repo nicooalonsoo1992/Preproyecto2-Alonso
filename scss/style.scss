@@ -9,6 +9,7 @@
 $color-background:#19222b;
 $dorado-texto-borde:#BD9240;
 $color-beige:#EFEDDC;
+$color-blanco:white;
 
 body {
     width: 100%;
@@ -25,20 +26,19 @@ body {
     bottom: 30px;
     right: 30px;
     background: #0df053;
-    color: #fff;
+    color:$color-blanco;
     border-radius: 30px;
     text-align: center;
     font-size: 30px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
-}
-
-.btn-wsp:hover {
-    text-decoration: none;
-    background: #fff;
-    color: #0df053;
-    animation: btn 0.7s;
-}
+    &:hover{
+        text-decoration: none;
+        background: $color-blanco;
+        color: #0df053;
+        animation: btn 0.7s;
+    }
+    }
 @keyframes btn{
     0%{
         transform: rotate(30deg);
@@ -62,7 +62,7 @@ body {
 
 /***************Barra de navegación****************/
 header{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $color-blanco;
     nav {
     height: 80px;
     width: 100%;
@@ -183,9 +183,9 @@ header{
     padding: 40px 0;
     h1{
         color: $color-beige;
-        text-shadow: 0 0 10px white,
-            0 0 20px white,
-            0 0 40px rgb(255, 255, 255);
+        text-shadow: 0 0 10px $color-blanco,
+            0 0 20px $color-blanco,
+            0 0 40px $color-blanco;
         font-size: 40px;
         font-weight: 200;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -245,9 +245,9 @@ header{
     margin-top: 50px;
     h1, h2{
         color: $color-beige;
-        text-shadow: 0 0 10px white,
-            0 0 20px white,
-            0 0 40px rgb(255, 255, 255);
+        text-shadow: 0 0 10px $color-blanco,
+            0 0 20px $color-blanco,
+            0 0 40px $color-blanco;
         font-size: 40px;
         font-weight: 200;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -273,7 +273,7 @@ header{
 }
 
 .contenedor_hijo--compartido {
-    border: 10px ridge white;
+    border: 10px ridge $color-blanco;
     width: 200px;
     height: 300px;
     display: flex;
@@ -283,65 +283,52 @@ header{
     align-items: center;
     transition: 1s;
     cursor: pointer;
+    &:hover{
+        background-color: $color-blanco;
+    }
 }
-.contenedor_hijo--compartido:hover{
-    background-color: #ffffffde;
-}
-
 .html {
     grid-column: 2/3;
     grid-row: 1/2;
+    &:hover{
+        border: 10px ridge rgb(255, 7, 7);
+    }
 }
-
-.html:hover {
-    border: 10px ridge rgb(255, 7, 7);
-}
-
 .css {
     grid-column: 3/4;
     grid-row: 1/2;
+    &:hover{
+        border: 10px ridge rgb(19, 0, 194);
+    }
 }
-
-.css:hover {
-    border: 10px ridge rgb(19, 0, 194);
-}
-
 .bootstrap {
     grid-column: 4/5;
     grid-row: 1/2;
+    &:hover{
+        border: 10px ridge rgb(52, 0, 100);
+    }
 }
-
-.bootstrap:hover {
-    border: 10px ridge rgb(52, 0, 100);
-}
-
 .javascript {
     grid-column: 2/3;
     grid-row: 2/3;
+    &:hover{
+        border: 10px ridge rgb(212, 198, 0);
+    }
 }
-
-.javascript:hover {
-    border: 10px ridge rgb(212, 198, 0);
-}
-
 .react {
     grid-column: 3/4;
     grid-row: 2/3;
+    &:hover{
+        border: 10px ridge rgb(20, 121, 252);
+    }
 }
-
-.react:hover {
-    border: 10px ridge rgb(20, 121, 252);
-}
-
 .backend {
     grid-column: 4/5;
     grid-row: 2/3;
+    &:hover{
+        border: 10px ridge rgb(39, 37, 37);
+    }
 }
-
-.backend:hover {
-    border: 10px ridge rgb(39, 37, 37);
-}
-
 /****************ESTUDIOS/IDIOMAS****************/
 .contenedor_idiomas--estudios {
     width: 100%;
@@ -352,7 +339,7 @@ header{
 }
 
 .idiomas_estudios {
-    border: 5px dotted white;
+    border: 5px dotted $color-blanco;
     width: 160px;
     height: 200px;
     transition: 1s;
@@ -363,7 +350,7 @@ header{
     margin-top: 10px;
     text-shadow: 0 0 5px #727070,
         0 0 10px #6d6a6a,
-        0 0 15px rgb(255, 255, 255);
+        0 0 15px $color-blanco;
     font-size: 18px;
     font-weight: 200;
     }
@@ -372,9 +359,9 @@ header{
     height: 80px;
     margin-top: 10px;
     }
-}
-.idiomas_estudios:hover{
-    background-color: white;
+    &:hover{
+        background-color: $color-blanco;
+    }
 }
 
 .idiomas_estudios--es:hover {
@@ -393,15 +380,15 @@ header{
 
 .idiomas_estudios--en:hover {
     border-top: 10px ridge rgb(0, 7, 105);
-    border-left: 10px ridge rgb(255, 255, 255);
-    border-right: 10px ridge rgb(255, 255, 255);
+    border-left: 10px ridge $color-blanco;
+    border-right: 10px ridge $color-blanco;
     border-bottom: 10px ridge rgb(255, 0, 0);
 }
 
 .idiomas_estudios--it:hover {
     border-top: 10px ridge rgb(31, 153, 0);
-    border-left: 10px ridge rgb(255, 255, 255);
-    border-right: 10px ridge rgb(255, 255, 255);
+    border-left: 10px ridge $color-blanco;
+    border-right: 10px ridge $color-blanco;
     border-bottom: 10px ridge rgb(255, 0, 0);
 }
 
@@ -413,9 +400,9 @@ header{
 }
 .laboral_titulo {
     color: $color-beige;
-    text-shadow: 0 0 10px white,
-        0 0 20px white,
-        0 0 40px rgb(255, 255, 255);
+    text-shadow: 0 0 10px $color-blanco,
+        0 0 20px $color-blanco,
+        0 0 40px $color-blanco;
     font-size: 40px;
     font-weight: 200;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -433,7 +420,7 @@ header{
 }
 .laboral{
     padding: 30px 0 20px 0;
-    border: 7px ridge rgb(255, 255, 255);
+    border: 7px ridge $color-blanco;
     place-self: center;
     width: 100%;
     height: 250px;
@@ -524,7 +511,7 @@ header{
     width: 260px;
     font-weight: 200;
     font-size: medium;
-    background-color: rgb(255, 255, 255);
+    background-color: $color-blanco;
 }
 
 .form_textarea {
@@ -532,7 +519,7 @@ header{
     font-weight: 200;
     font-size: large;
     width: 260px;
-    background-color: rgb(255, 255, 255);
+    background-color: $color-blanco;
 }
 
 .form_button {
@@ -562,7 +549,7 @@ header{
     line-height: 55px;
     bottom: 100px;
     right: 30px;
-    background: #fff;
+    background: $color-blanco;
     color: #DB4A39;
     border-radius: 30px;
     text-align: center;
@@ -574,13 +561,13 @@ header{
 .btn-gmail:hover {
     text-decoration: none;
     background:#DB4A39;
-    color: #fff;
+    color: $color-blanco;
     animation: btn 0.7s;
 }
 
 /********************FOOTER**********************/
 footer{
-    border-top: 2px solid white;
+    border-top: 2px solid $color-blanco;
 }
 .footer_generico {
     background-color: $color-background;
@@ -658,7 +645,7 @@ footer div a {
 }
 .card {
     width: 260px;
-    height: 170px;
+    height: 190px;
     border: 10px ridge $dorado-texto-borde;
     margin-top: 20px;
     margin: 30px;
