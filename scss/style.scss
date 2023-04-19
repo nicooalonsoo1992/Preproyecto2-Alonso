@@ -38,7 +38,7 @@ body {
         color: #0df053;
         animation: btn 0.7s;
     }
-    }
+}
 @keyframes btn{
     0%{
         transform: rotate(30deg);
@@ -64,8 +64,8 @@ body {
 header{
     border-bottom: 2px solid $color-blanco;
     nav {
-    height: 80px;
-    width: 100%;
+        height: 80px;
+        width: 100%;
         background-color: $color-background;
     }
     ul {
@@ -119,8 +119,7 @@ header{
     place-items: center;
 }
 
-.caja_inicio
-{
+.caja_inicio {
     position: relative;
     width: 900px;
     height: 500px;
@@ -140,8 +139,7 @@ header{
         font-size: 18px;
     }
 }
-.brillo_inicio::before , .brillo_inicio::after
-{
+.brillo_inicio::before , .brillo_inicio::after {
     content: '';
     position:absolute;
     left: -2px;
@@ -154,23 +152,18 @@ header{
     animation: animInicio 10s linear infinite;
 }
 
-@keyframes animInicio
-{
-    0%
-    {
+@keyframes animInicio {
+    0% {
         background-position:  0 0;
     }
-    50%
-    {
+    50% {
         background-position: 400% 0;
     }
-    100%
-    {
+    100% {
         background-position: 0 0;
     }
 }
-.brillo_inicio::after
-{
+.brillo_inicio::after {
     filter: blur(20px);
 }
 
@@ -196,6 +189,7 @@ header{
     justify-content: center;
     text-align: center;
     align-items: center;
+    cursor: pointer;
 }
 .card {
     width: 260px;
@@ -267,8 +261,8 @@ header{
     }
     p{
         font-family: 'Courier New', Courier, monospace, fantasy, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+        font-size: 18px;
+        font-weight: bold;
     }
 }
 
@@ -346,18 +340,18 @@ header{
     cursor: pointer;
     p{
         color: #4e4b4b;
-    width: 100%;
-    margin-top: 10px;
-    text-shadow: 0 0 5px #727070,
+        width: 100%;
+        margin-top: 10px;
+        text-shadow: 0 0 5px #727070,
         0 0 10px #6d6a6a,
         0 0 15px $color-blanco;
-    font-size: 18px;
-    font-weight: 200;
+        font-size: 18px;
+        font-weight: 200;
     }
     img{
         width: 80px;
-    height: 80px;
-    margin-top: 10px;
+        height: 80px;
+        margin-top: 10px;
     }
     &:hover{
         background-color: $color-blanco;
@@ -397,18 +391,17 @@ header{
     display: flex;
     place-content: center;
     padding-bottom: 30px;
+    .laboral_titulo {
+        color: $color-beige;
+        text-shadow: 0 0 10px $color-blanco,
+            0 0 20px $color-blanco,
+            0 0 40px $color-blanco;
+        font-size: 40px;
+        font-weight: 200;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 20px 0 20px 0;
+    }
 }
-.laboral_titulo {
-    color: $color-beige;
-    text-shadow: 0 0 10px $color-blanco,
-        0 0 20px $color-blanco,
-        0 0 40px $color-blanco;
-    font-size: 40px;
-    font-weight: 200;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 20px 0 20px 0;
-}
-
 .laboral_contenedor--contenido{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -417,27 +410,46 @@ header{
     height: 100%;
     gap: 30px;
     padding:0 15px 20px 15px;
+    .laboral{
+        padding: 30px 0 20px 0;
+        place-self: center;
+        width: 100%;
+        height: 250px;
+        transition: 0.5s;
+        cursor: pointer;
+        background-color:#141a20;
+        box-shadow:0px 1px 8px 1px black ;
+    &:hover{
+        padding: 30px 0 60px 0;
+        place-self: center;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        cursor: pointer;
+        box-shadow: 0px 1px 10px 5px rgb(0, 0, 0);
+        transform: scale(1.03);
+        background-color: #15151f;
+        box-shadow:0px 1px 10px 1px rgb(209, 209, 209) ;
+        }
+    }
+    .laboral_uno--titulo{
+        color: $color-beige;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        list-style: circle;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        }
+    .laboral_parrafo{
+        color: $color-beige;
+        margin-left: 50px;
+        font-weight: bold;
+        }
+    
 }
-.laboral{
-    padding: 30px 0 20px 0;
-    border: 7px ridge $color-blanco;
-    place-self: center;
-    width: 100%;
-    height: 250px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.laboral:hover{
-    padding: 30px 0 60px 0;
-    border: 9px ridge $dorado-texto-borde;
-    place-self: center;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    cursor: pointer;
-    box-shadow: 0px 1px 17px 8px rgba(255,255,255,1);
-    transform: scale(1.03);
-    background-color: #161414;
+.separacion{
+    margin-top: 10px;
 }
 .laboral_uno{
     grid-column: 1/2;
@@ -463,23 +475,7 @@ header{
     grid-column: 3/4;
     grid-row: 2/3;
 }
-.laboral_uno--titulo{
-    color: $color-beige;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-    list-style: circle;
-    margin-left: 25px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-.laboral_parrafo{
-    color: $color-beige;
-    margin-left: 50px;
-    font-weight: bold;
-}
-.separacion{
-    margin-top: 10px;
-}
+
 /*******************CONTACTO*********************/
 
 .main_generico{
@@ -502,7 +498,7 @@ header{
     border: ridge $dorado-texto-borde 8px;
     padding: 20px;
     width: 340px;
-            background: linear-gradient(0deg, rgb(44, 44, 44),$color-background,$color-background);
+    background: linear-gradient(0deg, rgb(44, 44, 44),$color-background,$color-background);
 }
 
 .form_datos {
@@ -629,55 +625,55 @@ footer div a {
         font-size: 15px;
     }
 /***********INICIO***********/
-.caja_inicio
-{
-    width: 600px;
-    height: 600px;
-    font-size: 20px;
-}
-.img_perfil {
-    margin-top: 60px;
-}
+    .caja_inicio
+    {
+        width: 600px;
+        height: 600px;
+        font-size: 20px;
+    }
+    .img_perfil {
+        margin-top: 60px;
+    }
 /******PROYECTOS******/
 
-.titulo_proyectos{
-    padding-top: 50px;
-}
-.card {
-    width: 260px;
-    height: 190px;
-    border: 10px ridge $dorado-texto-borde;
-    margin-top: 20px;
-    margin: 30px;
-}
+    .titulo_proyectos{
+        padding-top: 50px;
+    }
+    .card {
+        width: 260px;
+        height: 190px;
+        border: 10px ridge $dorado-texto-borde;
+        margin-top: 20px;
+        margin: 30px;
+    }
 
-.card_img {
-    width: 100%;
-    height: 50%;
-    margin-top: 0.5px;
-}
+    .card_img {
+        width: 100%;
+        height: 50%;
+        margin-top: 0.5px;
+    }
 
-.card_body {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(134, 149, 1);
-    width: 100%;
-    height: 49.5%;
-}
+    .card_body {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(134, 149, 1);
+        width: 100%;
+        height: 49.5%;
+    }
 
-.card_title {
-    text-align: start;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: $color-beige;
-}
+    .card_title {
+        text-align: start;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: $color-beige;
+    }
 
-.card_text {
-    text-align: left;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 14px;
-}
+    .card_text {
+        text-align: left;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
 
 /*********ESTUDIOS**********/
 
@@ -841,46 +837,46 @@ footer div a {
         display: block;
     }
 /***********INICIO***********/
-.main_inicio{
-    padding-top: 60px;
-}
-.caja_inicio
-{
-    height: 550px;
-    width: 470px;
-    font-size: 18px;
-    p{
-        padding-top: 15px;
+    .main_inicio{
+        padding-top: 60px;
     }
-}
+    .caja_inicio
+    {
+        height: 550px;
+        width: 470px;
+        font-size: 18px;
+        p{
+            padding-top: 15px;
+        }
+    }
 
 /****PROYECTOS****/
 
-.padre_card{
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-.card_uno{
-    grid-column: 1/2;
-    grid-row:1/2;
-    place-self: center;
-}
-.card_dos{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    place-self: center;
-}
-.card_tres{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    place-self: center;
-}
-.card_cuatro{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    place-self: center;
-}
+    .padre_card{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card_uno{
+        grid-column: 1/2;
+        grid-row:1/2;
+        place-self: center;
+    }
+    .card_dos{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        place-self: center;
+    }
+    .card_tres{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        place-self: center;
+    }
+    .card_cuatro{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        place-self: center;
+    }
 
 /*************ESTUDIOS/LENGUAJES DE PROGRAMACION**************/
 
@@ -1014,9 +1010,9 @@ footer div a {
     }
 }
 /*******CONTACTO******/
-.contenedor_form{
-    padding-top: 100px;
-}
+    .contenedor_form{
+        padding-top: 100px;
+    }
 
 @media screen and (max-width:487px) {
     /*****MENU DESPLEGABLE*****/
@@ -1024,32 +1020,32 @@ footer div a {
         right: -4.7%;
     }
 /***********INICIO***********/
-.main_inicio{
-    height: 100vh;
-}
-.caja_inicio{
-    width: 330px;
-    padding: 15px 0 20px 0;
-    h1{
-        font-size: 26px;
+    .main_inicio{
+        height: 100vh;
     }
-    h2{
-        font-size: 24px;
+    .caja_inicio{
+        width: 330px;
+        padding: 15px 0 20px 0;
+        h1{
+            font-size: 26px;
+        }
+        h2{
+            font-size: 24px;
+        }
+        p{
+            font-size: 14px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
     }
-    p{
-        font-size: 14px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
 
 /*ESTUDIOS*/
-.contenedor_titulo--estudios{
-    margin-top: 85px;
-}
-.titulo_idiomas{
-    margin: 15px 0 10px 0;
-}
+    .contenedor_titulo--estudios{
+        margin-top: 85px;
+    }
+    .titulo_idiomas{
+        margin: 15px 0 10px 0;
+    }
 
 /****BTN WSP****/
 
