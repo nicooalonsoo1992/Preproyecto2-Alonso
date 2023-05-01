@@ -993,6 +993,7 @@ footer div a {
     font-size: 14px;
     margin-left: 5%;
     margin-right: 5%;
+    padding-bottom: 10px;
   }
   /*ESTUDIOS*/
   .contenedor_titulo--estudios {
