@@ -631,6 +631,9 @@ footer div a {
     font-size: 15px;
   }
   /***********INICIO***********/
+  .main_inicio {
+    height: 110vh;
+  }
   .caja_inicio {
     width: 600px;
     height: 600px;
@@ -816,7 +819,7 @@ footer div a {
   /***********INICIO***********/
   .main_inicio {
     padding-top: 60px;
-    height: 120vh;
+    height: 130vh;
   }
   .caja_inicio {
     height: 650px;
