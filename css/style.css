@@ -979,9 +979,14 @@ footer div a {
     right: -4.7%;
   }
   /***********INICIO***********/
+  .main_inicio {
+    padding-top: 30px;
+    height: 110vh;
+  }
   .caja_inicio {
     width: 330px;
     padding: 15px 0 20px 0;
+    height: 660px;
   }
   .caja_inicio h1 {
     font-size: 26px;
@@ -993,7 +998,6 @@ footer div a {
     font-size: 14px;
     margin-left: 5%;
     margin-right: 5%;
-    padding-bottom: 10px;
   }
   /*ESTUDIOS*/
   .contenedor_titulo--estudios {
